@@ -10,6 +10,9 @@ import { AjouteretudiantComponent } from './components/ajouteretudiant/ajouteret
 import { AjouterenseignantComponent } from './components/ajouterenseignant/ajouterenseignant.component';
 import { AbsencesenseiComponent } from './components/absencesensei/absencesensei.component';
 import { AbsencesetudComponent } from './components/absencesetud/absencesetud.component';
+import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -19,9 +22,12 @@ import { AbsencesetudComponent } from './components/absencesetud/absencesetud.co
     AjouteretudiantComponent,
     AjouterenseignantComponent,
     AbsencesenseiComponent,
-    AbsencesetudComponent
+    AbsencesetudComponent,
+    LoginComponent,
+    HomeComponent
   ],
   imports: [
+    FormsModule,
     HttpClientModule,
     BrowserModule,
     AppRoutingModule

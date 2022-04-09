@@ -2,6 +2,10 @@
     <h1 class="mb-3">Ajouter Absence Etudiant</h1>
     <form>
         <div class="mb-3">
+            <label for="">Nom Complet</label>
+            <input type="text" class="form-control" placeholder="Nom" [(ngModel)]="nom" [ngModelOptions]="{standalone: true}" disabled="disabled">
+        </div>
+        <div class="mb-3">
             <label for="">Date</label>
             <input type="date" class="form-control" placeholder="Date">
         </div>
@@ -11,7 +15,7 @@
                 <input type="text" class="form-control" placeholder="Heure de début">
             </div>
             <div class="mb-3 col">
-                <label for="">Heure de début</label>
+                <label for="">Heure de fin</label>
                 <input type="text" class="form-control" placeholder="Heure de fin">
             </div>
         </div>
